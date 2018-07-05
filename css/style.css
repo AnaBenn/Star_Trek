@@ -1,0 +1,203 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	background-color: #f4f4f4
+}
+
+/*GLOBAL*/
+
+.container {
+	/*makes responsive*/
+	width: 80% margin:auto;
+	overflow: hidden;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+.button_1 {
+	height: 38px;
+	background-color: #d6a444;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+.dark {
+	padding: 15px;
+	background: #a71313;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*HEADER*/
+
+header {
+	background: #2b53a7;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #a71313 3px solid;
+	padding: 15px;
+}
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+/*create horizontal navigation menu*/
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+header #branding {
+	float: left;
+}
+header #branding h1 {
+	margin: 0;
+}
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+header .highlight, header .current a {
+	color: #d6a444;
+	font-weight: bold;
+}
+header a:hover {
+	color: #a71313;
+	font-weight: bold;
+}
+
+/*SHOWCASE*/
+
+#showcase {
+	min-height: 400px;
+	background: url('../img/showcase.jpg') no-repeat 0 -400px;
+	text-align: center;
+	color: #ffffff;
+}
+#showcase h1 {
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+
+/*NEWSLETTER*/
+
+#newsletter {
+	padding: 15px;
+	color: #ffffff;
+	background: #2b53a7;
+}
+#newsletter h1 {
+	float: left;
+}
+#newsletter form {
+	float: right;
+	margin-top: 15px;
+}
+#newsletter input[type="email"] {
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+/*BOXES*/
+
+#boxes {
+	margin-top: 20px;
+}
+#boxes .box {
+	/*makes responsive*/
+	float: left;
+	width: 30%;
+	padding: 15px;
+	text-align: center;
+}
+#boxes .box img {
+	width: 175px;
+	padding: 10px;
+}
+#boxes .box_mission {
+	/*makes responsive*/
+	float: left;
+	width: 30%;
+	padding: 15px;
+	text-align: left;
+}
+
+/*SIDEBAR*/
+
+aside#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+
+/*MAIN-COL*/
+
+article#main-col {
+	float: left;
+	width: 65%;
+	margin-top: 10px;
+}
+ul#missions li {
+	list-style: none;
+	padding: 20px;
+	border: #a71313 solid 3px;
+	margin-bottom: 5px;
+}
+#crewimg {
+	float: left;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+#missionimg {
+	float: left;
+	width: 25%;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+/*FOOTER*/
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #2b53a7;
+	text-align: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media(max-width:768px) {
+	header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col, aside#sidebar {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header {
+		padding-bottom: 20px;
+	}
+	#showcase h1 {
+		margin-top: 40px;
+	}
+	#newsletter button {
+		display: block;
+		width: 100%;
+	}
+	#newsletter form input[type="email"] {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}
