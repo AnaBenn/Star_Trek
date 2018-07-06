@@ -163,7 +163,6 @@ ul#missions li {
 }
 
 #missionimg {
-	float: left;
 	padding: 5px;
 	margin-bottom: 5px;
 }
@@ -201,7 +200,6 @@ footer {
 		margin-bottom: 5px;
 	}
 }
-
 
 
 
