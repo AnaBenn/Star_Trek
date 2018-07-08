@@ -119,8 +119,12 @@ header a:hover {
 	/*makes responsive*/
 	float: left;
 	width: 30%;
-	padding: 15px;
+	padding: 10px;
 	text-align: center;
+}
+#boxes .box p {
+	/*makes responsive*/
+	padding:15px;
 }
 #boxes .box img {
 	width: 175px;
